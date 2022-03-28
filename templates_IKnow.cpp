@@ -1,3 +1,4 @@
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -70,18 +71,24 @@ int main(void)
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    cin>>t;
-    while(t--)
-    {
-        cin>>n;
-        vector<pair<int,int> >v(n);
-        for(i=0; i<n; ++i)
+    vector<ll>ve(100);
+    for (int i = 0; i < 50; i++) {
+		ve[i]=expo(2, i) ;
+	}
+	for (int i = 0; i < 50; i++) {
+		cout<<ve[i];
+	}
+    
+    cout<<numtostr(68);
+    /*
+    vector<pair<int,int> >v(5);
+        for(i=0; i<5; ++i)
         {
             cin>>v[i].first;
             v[i].second = i+1;
         }
         sort(all(v));
-        cout<<v[0].second<<' '<<v[n-1].second<<'\n';
-    }
+        cout<<v[0].second<<' '<<v[5-1].second<<'\n'; //index of min and max element of the array
+    */
     return 0;
 }
