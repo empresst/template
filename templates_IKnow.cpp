@@ -1,4 +1,3 @@
-
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -49,21 +48,6 @@ int LCM(int a, int b)  //least common multiple lcm(6,10)=30
     return (a / g) * b;
 }
 
-string numtostr(ll n)  //convert number to string
-{
-    ostringstream str1;
-    str1 << n;
-    return str1.str();
-}
-
-ll strtonum(string s)  // convert string to number
-{
-    ll x;
-    stringstream str1(s);
-    str1 >> x;
-    return x;
-}
-
 short t;
 int n,i;
 int main(void)
@@ -71,6 +55,7 @@ int main(void)
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
+    
     vector<ll>ve(100);
     for (int i = 0; i < 50; i++) {
 		ve[i]=expo(2, i) ;
@@ -79,8 +64,12 @@ int main(void)
 		cout<<ve[i];
 	}
     
-    cout<<numtostr(68);
-    /*
+    int n = stoi("123"); cout<<" "<<n;      //string to num
+    string str= to_string(13456); cout<<" "<<str;     //num to string
+    
+    cout<<LCM(6,10);
+    
+    
     vector<pair<int,int> >v(5);
         for(i=0; i<5; ++i)
         {
@@ -89,6 +78,6 @@ int main(void)
         }
         sort(all(v));
         cout<<v[0].second<<' '<<v[5-1].second<<'\n'; //index of min and max element of the array
-    */
+    
     return 0;
 }
