@@ -70,7 +70,7 @@ int main(void)
     cout<<LCM(6,10);
     
     
-    vector<pair<int,int> >v(5);
+    vector<pair<int,int> >v(5);    //vector pair with index
         for(i=0; i<5; ++i)
         {
             cin>>v[i].first;
